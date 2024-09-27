@@ -43,7 +43,8 @@ img {
 	background: rgba(41, 96, 205, 0.599);
 	border-radius: 2rem;
 	padding: 2rem;
-	box-shadow: 0 0.4rem 0.3rem 0rem rgba(0, 0, 0, 0.371);
+	/* box-shadow: 0 0.5rem 0.2rem 0rem rgba(0, 0, 0, 0.52); */
+	border: 2px solid rgba(15, 31, 126, 0.186);
 }
 
 #question {
@@ -67,6 +68,7 @@ img {
 	width: 100%;
 	cursor: pointer;
 	background-color: rgba(28, 86, 168, 0.842);
+	border: 1px solid rgba(0, 0, 0, 0.086);
 }
 .answer button:hover {
 	background-color: rgba(20, 67, 134, 0.842);
