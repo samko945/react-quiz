@@ -1,5 +1,6 @@
 import { useState } from "react";
 import QUESTIONS from "../questions.js";
+import QuestionTimer from "./QuestionTimer.jsx";
 
 export default function Quiz() {
 	const [userAnswers, setUserAnswers] = useState([]);
@@ -26,6 +27,12 @@ export default function Quiz() {
 
 	return (
 		<div id="question-container">
+			<QuestionTimer
+				timeout={10000}
+				onTimeout={() => {
+					handleSelectAnswer(null);
+				}}
+			/>
 			<h2 id="question">{question.text}</h2>
 			<ul id="answers">
 				{question.answers.map((answer) => (
